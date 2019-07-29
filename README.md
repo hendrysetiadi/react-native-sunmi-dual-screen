@@ -1,15 +1,15 @@
 
 # react-native-sunmi-dual-screen
 
-## Getting started
+## Getting Started
 
 `$ npm install react-native-sunmi-dual-screen --save`
 
-### Mostly automatic installation
+### Mostly Automatic Installation
 
 `$ react-native link react-native-sunmi-dual-screen`
 
-### Manual installation
+### Manual Installation
 
 
 #### iOS
@@ -35,11 +35,28 @@
   	```
 
 
+### Post Installation
+
+
+#### Android
+
+1. Open up `android/app/src/main/AndroidManifest.xml`
+2. Add this SUNMI receiver code in the middle of `application` tag:
+    ```
+    <receiver android:name="sunmi.ds.MsgReceiver">
+      <intent-filter>
+        <action android:name="com.sunmi.hcservice"/>
+        <action android:name="com.sunmi.hcservice.status"/>
+      </intent-filter>
+    </receiver>
+    ```
+
+
 ## Usage
+
 ```javascript
 import RNSunmiDualScreen from 'react-native-sunmi-dual-screen';
 
 // TODO: What to do with the module?
 RNSunmiDualScreen;
 ```
-  

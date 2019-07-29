@@ -1,16 +1,22 @@
-
 {
   "name": "react-native-sunmi-dual-screen",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Native Library for SUNMI T1 Dual Screen",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react",
+    "mobile",
+    "android",
+    "ios",
+    "codecapital",
+    "sunmi",
+    "dual-screen"
   ],
-  "author": "",
+  "author": "Hendry Setiadi",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
